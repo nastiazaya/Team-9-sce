@@ -1,0 +1,70 @@
+int log_in (char* username, char* password) {return index of user in the Database / -1 if not found}
+
+void menu_manager()
+{
+switch cases to each function of manager:
+1. void repricing_products()
+2. void all_reports()
+3. void opportunity_table_database()
+4. void search_existing_customer() {if not: new customer, if yes: update_customer_details}
+5. void todo_list()
+}
+
+void menu_employee()
+{
+switch cases to each function of employee:
+1. void opportunity_table_database()
+2. void search_existing_customer() {if not: new customer, if yes: update_customer_details}
+3. void todo_list()
+4. void self_reports(char* name) {all data about the employee from the opportunity table}
+}
+
+void repricing_products() {updating the price_list in the Database}
+
+void all_reports_menu()
+{switch case to all available reports:
+1. void report_by_name() {scanf char* name -> calls self_reports function}
+2. void new_customers_last_month()
+3. void new_customers_last_year()
+4. void successful_deals_last_month()
+5. void successful_deals_last_year()
+}
+
+void new_customer():
+enter the details  to the database through a client struct
+choose custumer status
+send into next_stage()
+
+void next_stage():
+print_pricelist
+generates a deal number
+gives the option to choose the type of product
+scanf of number of product ordered
+choose type of deal
+calculates the price
+chose a deal status
+if deal status is successful sent to add_payment_details()
+else:goto summary()
+
+void print_pricelist():
+prints the price list(duh)
+
+void add_payment_details():
+enter the payment method: credit catd, paypal, bank statement
+
+void summary():
+rate the calls
+add delivery date if succsessful
+add notes
+
+sturct client:
+*first name
+*last name
+*id
+*phone number 
+*email
+*city 
+*adress
+*status
+*payment_details
+
